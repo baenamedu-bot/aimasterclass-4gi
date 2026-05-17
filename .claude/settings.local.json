@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir *)",
+      "Bash(git init *)",
+      "Bash(git -c user.email=baenamedu@gmail.com -c user.name=baenamedu commit -m 'feat: 강사 전용 비공개 메모 모드 추가 *)"
+    ]
+  }
+}
