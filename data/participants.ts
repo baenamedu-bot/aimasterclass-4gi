@@ -8,6 +8,9 @@ export type Participant = {
   goals: string[];
   experience: string;
   interests: string[];
+  appSlug: string;
+  appTitle: string;
+  appShortDesc: string;
 };
 
 export const participants: Participant[] = [
@@ -21,6 +24,9 @@ export const participants: Participant[] = [
     goals: ["감리일지 자동화", "도면 법규검토"],
     experience: "AI 활용 입문 단계, 소규모 사무실 1인 운영",
     interests: ["감리/감독", "도면 검토", "업무 자동화"],
+    appSlug: "choi-woonhyung",
+    appTitle: "감리일지 자동 작성기",
+    appShortDesc: "현장 사진과 메모로 정형화된 감리일지 자동 생성",
   },
   {
     id: "min-kyungjin",
@@ -32,6 +38,9 @@ export const participants: Participant[] = [
     goals: ["홍보영상 제작", "AI 영상 워크플로우 구축"],
     experience: "ChatGPT·Midjourney 등 일상 활용 중",
     interests: ["영상 생성", "이미지 생성", "브랜딩"],
+    appSlug: "min-kyungjin",
+    appTitle: "건축사사무소 홍보영상 스토리보드",
+    appShortDesc: "외관 사진 → 8씬 스토리보드 + Veo 프롬프트",
   },
   {
     id: "park-jimin",
@@ -43,6 +52,9 @@ export const participants: Participant[] = [
     goals: ["PPT 레이아웃 자동화", "도면 기반 산출물 정리"],
     experience: "Gamma 등 AI PPT 도구 사용 경험",
     interests: ["프레젠테이션", "도면 검토", "문서 자동화"],
+    appSlug: "park-jimin",
+    appTitle: "도면 법규검토 + 보고 슬라이드",
+    appShortDesc: "도면·대지 정보로 법규 검토와 클라이언트 보고용 슬라이드 초안",
   },
   {
     id: "seo-junghwa",
@@ -54,6 +66,9 @@ export const participants: Participant[] = [
     goals: ["견적 작업 보조", "기초 AI 사용법 익히기"],
     experience: "AI 도구 사용 경험 없음, 음성/사진 위주 활용 선호",
     interests: ["견적 산출", "음성 입력", "이미지 인식"],
+    appSlug: "seo-junghwa",
+    appTitle: "샷시 견적 자동 작성",
+    appShortDesc: "창호 항목 입력 → 자재·시공·VAT 포함 견적서",
   },
   {
     id: "oh-sehyun",
@@ -65,6 +80,9 @@ export const participants: Participant[] = [
     goals: ["사업검토 양식 자동화 앱 제작", "GPTs/단일 HTML 도구 직접 구축"],
     experience: "ChatGPT 정기 사용, 업무 적용 단계",
     interests: ["GPTs 만들기", "사업성 분석", "양식 자동화"],
+    appSlug: "oh-sehyun",
+    appTitle: "개발사업 타당성 검토 어시스턴트",
+    appShortDesc: "사업지·용도 입력 → 입지·법규·사업성·리스크 검토 초안",
   },
   {
     id: "uh-myungjun",
@@ -76,6 +94,9 @@ export const participants: Participant[] = [
     goals: ["시장조사 자동화", "리서치 GPT 구축"],
     experience: "Perplexity·Claude 비교 사용 경험",
     interests: ["LLM 비교", "리서치 자동화", "시장조사"],
+    appSlug: "uh-myungjun",
+    appTitle: "부동산 시장조사 보고서 자동생성",
+    appShortDesc: "지역·물건 유형 → 시장조사 보고서 한 장",
   },
   {
     id: "park-minju",
@@ -87,6 +108,9 @@ export const participants: Participant[] = [
     goals: ["민원응대 매뉴얼 작성 보조", "휴대폰 기반 간단한 AI 사용"],
     experience: "AI 도구 사용 경험 없음",
     interests: ["민원 응대", "Gemini 앱", "음성 입력"],
+    appSlug: "park-minju",
+    appTitle: "민원 응대 답변 생성기",
+    appShortDesc: "민원 내용·유형·톤 → 4단 구조 답변 초안",
   },
   {
     id: "park-kiju",
@@ -98,6 +122,9 @@ export const participants: Participant[] = [
     goals: ["인력 스케줄러 제작", "젠스파크 활용 비교"],
     experience: "젠스파크 등 신규 LLM 도구에 관심 높음",
     interests: ["젠스파크", "스케줄 관리", "LLM 비교"],
+    appSlug: "park-kiju",
+    appTitle: "인력 스케줄러 + 관리비 산정",
+    appShortDesc: "월간 인력배치표 자동 작성 / 가구별 관리비 계산",
   },
   {
     id: "choi-wooseop",
@@ -109,6 +136,9 @@ export const participants: Participant[] = [
     goals: ["본인 업무 자동화 도구 구축", "코딩 + AI 결합 실습"],
     experience: "기초 코딩 경험 있음, 자녀 학습용 도구 자체 제작 경험",
     interests: ["바이브 코딩", "업무 자동화", "GPTs"],
+    appSlug: "choi-wooseop",
+    appTitle: "화장실 칸막이 BOM + 작업지시서",
+    appShortDesc: "실측 치수 → 자재 BOM·하드웨어·재단표 자동 산출",
   },
   {
     id: "seo-hyun",
@@ -120,6 +150,9 @@ export const participants: Participant[] = [
     goals: ["SNS 콘텐츠 제작", "카피라이팅 GPT 활용"],
     experience: "콘텐츠 제작 도구 부분 사용 중",
     interests: ["이미지 생성", "SNS 카피", "Gemini Gem"],
+    appSlug: "seo-hyun",
+    appTitle: "원목마루 SNS 콘텐츠 자동 생성",
+    appShortDesc: "시공 사진 → 인스타 캡션·블로그·해시태그·다음 콘텐츠",
   },
   {
     id: "lee-jongmin",
@@ -131,6 +164,9 @@ export const participants: Participant[] = [
     goals: ["영상 생성(Veo·Seedance) 실무 적용", "기성청구 자동화 도구"],
     experience: "이전 강의 수강, 응용 단계",
     interests: ["영상 생성", "기성청구", "현장 자동화"],
+    appSlug: "lee-jongmin",
+    appTitle: "원목마루 브랜드 영상 기획",
+    appShortDesc: "15초 릴스용 5씬 시나리오 + Veo 영문 프롬프트",
   },
   {
     id: "ki-minwoo",
@@ -142,6 +178,9 @@ export const participants: Participant[] = [
     goals: ["사내 보안 정책 내 AI 도입", "민감정보 마스킹 워크플로우"],
     experience: "공용 클라우드 사용 제약, 폐쇄망 환경 고려 필요",
     interests: ["보안/컴플라이언스", "API/온프레미스", "프롬프트 마스킹"],
+    appSlug: "ki-minwoo",
+    appTitle: "월간 경비·법인카드 모니터링",
+    appShortDesc: "CSV 업로드 → 카테고리·한도·이상 패턴·요약",
   },
 ];
 
